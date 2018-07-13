@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Salvando Cliente</title>
+<title>Cadastro de Cliente</title>
 </head>
 <body>
 	<form id="cliente" action="/salvarcliente" method="POST">

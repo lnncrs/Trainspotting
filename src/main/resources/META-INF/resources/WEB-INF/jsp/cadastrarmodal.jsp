@@ -4,7 +4,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8" />
-<title>Salvando Modal</title>
+<title>Cadastro de Modal</title>
 </head>
 <body>
 	<form id="modal" action="/salvarmodal" method="POST">

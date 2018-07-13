@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Lista de Precos</title>
 </head>
 <body>
-
+	<h1>Aqui vai uma lista de Precos</h1>
 </body>
 </html>
