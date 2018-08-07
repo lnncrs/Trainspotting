@@ -13,7 +13,6 @@ import br.com.bb.ufabctrainspotting.model.service.GerenciaCliente;
 @Controller
 public class ControllerCliente {
 	
-	//teste git
 	@Autowired
 	GerenciaCliente gerenciaCliente;
 	
