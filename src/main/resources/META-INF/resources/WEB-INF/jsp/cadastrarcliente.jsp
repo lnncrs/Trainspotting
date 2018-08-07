@@ -16,6 +16,5 @@
 		<label>Telefone: <input name="telefone" type="textinput" required></label><br/> 
 		<input type="submit" name="action" value="Salvar conta" formnovalidate /><input type="submit" name="action" value="Enviar"/>
 	</form>
-	<%@ include file = "teste.jsp" %>
 </body>
 </html>
