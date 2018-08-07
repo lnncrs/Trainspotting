@@ -34,11 +34,15 @@ public class ControllerEntrega {
 		return new ModelAndView("cadastrarentrega");
 	}
 	
-	//TODO procurar como listar as entregas
-	@RequestMapping(value="/listarentregas")
-	public List<Entrega> listarEntregas() {
+	@RequestMapping(value="/listadeentregas")
+	public ModelAndView listarEntregas() {
 		
-		return gerenciaEntrega.listarTodos();
+		
+		List<Entrega> entregas = gerenciaEntrega.listarTodos();
+		ModelAndView modelAndView = new ModelAndView("listadeentregas");
+		modelAndView.addObject("entregas", entregas);
+		
+		return modelAndView;
 	}
 	
 	//TODO verificar como fica a data aqui

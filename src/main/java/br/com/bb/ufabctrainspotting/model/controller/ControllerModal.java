@@ -24,15 +24,14 @@ public class ControllerModal {
 	}
 	
 	//TODO procurar como listar os modais
-	@RequestMapping(value="/listarmodais")
+	@RequestMapping(value="/listademodais")
 	public ModelAndView listarModais() {
 		
 		List<Modal> modais = gerenciaModal.listarTodos();
+		ModelAndView modelAndView = new ModelAndView("listademodais");
+		modelAndView.addObject("lists", modais);
 
-		ModelAndView map = new ModelAndView("listademodais");
-		map.addObject("lists", modais);
-
-		return map;
+		return modelAndView;
 	}
 
 	@RequestMapping(value="/salvarmodal", method=RequestMethod.POST)

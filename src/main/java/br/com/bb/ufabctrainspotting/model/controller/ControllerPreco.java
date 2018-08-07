@@ -28,10 +28,14 @@ public class ControllerPreco {
 		return new ModelAndView("cadastrarpreco");
 	}
 
-	@RequestMapping(value="/listarpreco")
-	public List<Preco> listarPrecos() {
+	@RequestMapping(value="/listadeprecos")
+	public ModelAndView listarPrecos() {
 		
-		return gerenciaPreco.listarTodos();
+		List<Preco> precos = gerenciaPreco.listarTodos();
+		ModelAndView modelAndView = new ModelAndView("listadeprecos");
+		modelAndView.addObject("precos", precos);
+		
+		return modelAndView;
 	}
 	
 	//TODO resolver como vem a data de inicio e fim, como eh salvo no banco e como eh passado esse parametrp

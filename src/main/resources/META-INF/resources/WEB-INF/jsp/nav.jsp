@@ -94,49 +94,49 @@
                                 <a href="index"><i class="fa fa-dashboard fa-fw"></i> Início</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Clientes<span class="fa arrow"></span></a>
+                                <a href="#"><i class="fa fa-user fa-fw"></i> Clientes<span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level">
                                     <li>
-                                        <a href="cadastrarclientes">Cadastrar Clientes</a>
+                                        <a href="cadastrarcliente">Cadastrar Clientes</a>
                                     </li>
                                     <li>
-                                        <a href="listarclientes">Listar Clientes</a>
+                                        <a href="listadeclientes">Listar Clientes</a>
                                     </li>
                                 </ul>
                                 <!-- /.nav-second-level -->
                             </li>
                                                         <li>
-                                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Entregas<span class="fa arrow"></span></a>
+                                <a href="#"><i class="fa fa-truck fa-fw"></i> Entregas<span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level">
                                     <li>
-                                        <a href="cadastrarclientes">Nova Entrega</a>
+                                        <a href="cadastrarentrega">Nova Entrega</a>
                                     </li>
                                     <li>
-                                        <a href="listarclientes">Listar Entregas</a>
+                                        <a href="listadeentregas">Listar Entregas</a>
                                     </li>
                                 </ul>
                                 <!-- /.nav-second-level -->
                             </li>
                                                         <li>
-                                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Modais<span class="fa arrow"></span></a>
+                                <a href="#"><i class="fa fa-ship fa-fw"></i> Modais<span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level">
                                     <li>
-                                        <a href="cadastrarclientes">Cadastrar Modais</a>
+                                        <a href="cadastrarmodal">Cadastrar Modais</a>
                                     </li>
                                     <li>
-                                        <a href="listadeclientes">Listar Modais</a>
+                                        <a href="listademodais">Listar Modais</a>
                                     </li>
                                 </ul>
                                 <!-- /.nav-second-level -->
                             </li>
                                                         <li>
-                                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Precos<span class="fa arrow"></span></a>
+                                <a href="#"><i class="fa fa-money fa-fw"></i> Precos<span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level">
                                     <li>
-                                        <a href="cadastrarclientes">Cadastrar Preco</a>
+                                        <a href="cadastrarpreco">Cadastrar Preco</a>
                                     </li>
                                     <li>
-                                        <a href="listarclientes">Listar Precos</a>
+                                        <a href="listadeprecos">Listar Precos</a>
                                     </li>
                                 </ul>
                                 <!-- /.nav-second-level -->
