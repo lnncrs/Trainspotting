@@ -41,7 +41,11 @@ public class ControllerCliente {
 		Cliente clienteNovo = new Cliente (cliente, documento, email, telefone);
 		gerenciaCliente.salvar(clienteNovo);
 		
-		return new ModelAndView("sucesso");
+		List<Cliente> clientes = gerenciaCliente.listarTodos();
+		ModelAndView modelAndView = new ModelAndView("listadeclientes");
+		modelAndView.addObject("clientes", clientes);
+		
+		return modelAndView;
 	}
 	
 	//TODO verificar se passar soh o id eh suficiente para apagar o cliente
@@ -52,7 +56,11 @@ public class ControllerCliente {
 		cliente.setClienteId(clienteId);
 		gerenciaCliente.deletar(cliente);
 		
-		return new ModelAndView("sucesso");
+		List<Cliente> clientes = gerenciaCliente.listarTodos();
+		ModelAndView modelAndView = new ModelAndView("listadeclientes");
+		modelAndView.addObject("clientes", clientes);
+		
+		return modelAndView;
 	}
 	
 	@RequestMapping(value="/alterarcliente", method=RequestMethod.POST)
@@ -66,6 +74,10 @@ public class ControllerCliente {
 		clienteAlterado.setClienteId(clienteId);
 		gerenciaCliente.alterar(clienteAlterado);
 		
-		return new ModelAndView("sucesso");
+		List<Cliente> clientes = gerenciaCliente.listarTodos();
+		ModelAndView modelAndView = new ModelAndView("listadeclientes");
+		modelAndView.addObject("clientes", clientes);
+		
+		return modelAndView;
 	}
 }

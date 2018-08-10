@@ -57,7 +57,7 @@ public class ControllerEntrega {
 		Entrega entregaNovo = new Entrega (cliente, preco, null, null, distancia, false);
 		gerenciaEntrega.salvar(entregaNovo);
 		
-		return new ModelAndView("sucesso");
+		return new ModelAndView("listadeentregas");
 	}
 	
 	@RequestMapping(value="/apagarEntrega", method=RequestMethod.POST)
@@ -80,6 +80,6 @@ public class ControllerEntrega {
 		Entrega entregaAlterado = new Entrega (cliente, preco, null, null, distancia, false);
 		gerenciaEntrega.salvar(entregaAlterado);
 		
-		return new ModelAndView("sucesso");
+		return new ModelAndView("listadeentregas");
 	}
 }

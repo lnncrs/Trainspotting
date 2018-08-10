@@ -40,7 +40,7 @@ public class ControllerModal {
 		Modal modalNovo = new Modal(modal);
 		gerenciaModal.salvar(modalNovo);
 		
-		return new ModelAndView("sucesso");
+		return new ModelAndView("listademodais");
 	}
 	
 	//TODO verificar se passar soh o id eh suficiente para apagar o modal
@@ -51,7 +51,7 @@ public class ControllerModal {
 		modal.setModalId(modalId);
 		gerenciaModal.deletar(modal);
 		
-		return new ModelAndView("sucesso");
+		return new ModelAndView("listademodais");
 	}
 	
 	@RequestMapping(value="/alterarmodal", method=RequestMethod.POST)
@@ -62,6 +62,6 @@ public class ControllerModal {
 		modalAlterado.setModalId(modalId);
 		gerenciaModal.alterar(modalAlterado);
 		
-		return new ModelAndView("sucesso");
+		return new ModelAndView("listademodais");
 	}
 }

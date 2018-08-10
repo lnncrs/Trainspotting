@@ -54,7 +54,7 @@ public class ControllerPreco {
 		Preco precoNovo = new Preco (modal, valor, null, null, padrao);
 		gerenciaPreco.salvar(precoNovo);
 		
-		return new ModelAndView("sucesso");
+		return new ModelAndView("listadeprecos");
 	}
 	
 	//TODO verificar se funciona passando um Preco apenas com Id
@@ -66,7 +66,7 @@ public class ControllerPreco {
 		preco.setPrecoId(precoId);
 		gerenciaPreco.deletar(preco);
 		
-		return new ModelAndView("sucesso");
+		return new ModelAndView("listadeprecos");
 	}
 	
 	//TODO verificar a questao da data
@@ -82,6 +82,6 @@ public class ControllerPreco {
 		precoAlterado.setPrecoId(precoId);
 		gerenciaPreco.alterar(precoAlterado);
 		
-		return new ModelAndView("sucesso");
+		return new ModelAndView("listadeprecos");
 	}
 }
