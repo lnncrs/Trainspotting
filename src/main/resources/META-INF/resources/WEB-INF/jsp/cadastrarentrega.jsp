@@ -5,6 +5,7 @@
 <head>
 	<title>GCM - Cadastro de Entrega</title>
 	<%@ include file="head.jsp"%>
+	<%@ include file="basiclinks.jsp"%>
 </head>
 <body>
 	<div id="wrapper">
@@ -29,6 +30,6 @@
 		<!-- /#page-wrapper -->
 	</div>
 	<!-- /#wrapper -->
-	<%@ include file="scripts.jsp"%>
+	<%@ include file="basicscripts.jsp"%>
 </body>
 </html>

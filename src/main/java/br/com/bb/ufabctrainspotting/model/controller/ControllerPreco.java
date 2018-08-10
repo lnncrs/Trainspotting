@@ -25,6 +25,9 @@ public class ControllerPreco {
 	@RequestMapping(value = "/cadastrarpreco")
 	public ModelAndView cadastrarPreco() {
 
+		List<Modal> modais = gerenciaModal.listarTodos();
+		ModelAndView modelAndView = new ModelAndView("listademodais");
+		modelAndView.addObject("modais", modais);
 		return new ModelAndView("cadastrarpreco");
 	}
 

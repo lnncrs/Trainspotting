@@ -29,7 +29,7 @@ public class ControllerModal {
 		
 		List<Modal> modais = gerenciaModal.listarTodos();
 		ModelAndView modelAndView = new ModelAndView("listademodais");
-		modelAndView.addObject("lists", modais);
+		modelAndView.addObject("modais", modais);
 
 		return modelAndView;
 	}
