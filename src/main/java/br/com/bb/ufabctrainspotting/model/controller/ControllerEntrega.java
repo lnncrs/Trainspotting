@@ -34,12 +34,29 @@ public class ControllerEntrega {
 		return new ModelAndView("cadastrarentrega");
 	}
 	
+	@RequestMapping(value="/cadastrarentregacliente")
+	public ModelAndView cadastrarEntregaCliente() {
+
+		return new ModelAndView("cadastrarentregacliente");
+	}
+	
 	@RequestMapping(value="/listadeentregas")
 	public ModelAndView listarEntregas() {
 		
 		
 		List<Entrega> entregas = gerenciaEntrega.listarTodos();
 		ModelAndView modelAndView = new ModelAndView("listadeentregas");
+		modelAndView.addObject("entregas", entregas);
+		
+		return modelAndView;
+	}
+	
+	@RequestMapping(value="/listadeentregascliente")
+	public ModelAndView listarEntregasCliente() {
+		
+		
+		List<Entrega> entregas = gerenciaEntrega.listarTodos();
+		ModelAndView modelAndView = new ModelAndView("listadeentregascliente");
 		modelAndView.addObject("entregas", entregas);
 		
 		return modelAndView;

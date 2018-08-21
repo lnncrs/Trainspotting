@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div id="wrapper">
-		<%@ include file="nav.jsp"%>
+		<%@ include file="navadministrativo.jsp"%>
 		<!-- Page Content -->
 		<div id="page-wrapper">
 			<div class="container-fluid">

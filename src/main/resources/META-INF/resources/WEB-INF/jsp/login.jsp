@@ -16,7 +16,7 @@
 			<form class="login-form">
 				<input type="text" placeholder="Usuário" /> <input type="password"
 					placeholder="Senha" />
-				<a href="index"><button>login</button></a>
+				<a href="dashboardCliente"><button type="button">login</button></a>
 				<p class="message">
 					Esqueceu sua senha? <a href="#">Recuperar senha</a>
 				</p>

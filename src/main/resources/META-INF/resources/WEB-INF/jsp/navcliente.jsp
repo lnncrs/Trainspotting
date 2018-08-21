@@ -1,7 +1,7 @@
 <!-- Navigation -->
             <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index">Global Costumer Manager</a>
+                    <a class="navbar-brand" href="dashboardCliente">Global Costumer Manager</a>
                 </div>
 
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -80,7 +80,7 @@
                             <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                             </li>
                             <li class="divider"></li>
-                            <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                            <li><a href="login"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                             </li>
                         </ul>
                     </li>
@@ -91,57 +91,23 @@
                     <div class="sidebar-nav navbar-collapse">
                         <ul class="nav" id="side-menu">
                             <li>
-                                <a href="index"><i class="fa fa-dashboard fa-fw"></i> Início</a>
+                                <a href="dashboardCliente"><i class="fa fa-dashboard fa-fw"></i> Início</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-user fa-fw"></i> Clientes<span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="cadastrarcliente">Cadastrar Clientes</a>
-                                    </li>
-                                    <li>
-                                        <a href="listadeclientes">Listar Clientes</a>
-                                    </li>
-                                </ul>
-                                <!-- /.nav-second-level -->
-                            </li>
-                                                        <li>
                                 <a href="#"><i class="fa fa-truck fa-fw"></i> Entregas<span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level">
                                     <li>
-                                        <a href="cadastrarentrega">Nova Entrega</a>
+                                        <a href="cadastrarentregacliente">Nova Entrega</a>
                                     </li>
                                     <li>
-                                        <a href="listadeentregas">Listar Entregas</a>
+                                        <a href="listadeentregascliente">Listar Entregas</a>
                                     </li>
                                 </ul>
                                 <!-- /.nav-second-level -->
                             </li>
-                                                        <li>
-                                <a href="#"><i class="fa fa-ship fa-fw"></i> Modais<span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="cadastrarmodal">Cadastrar Modais</a>
-                                    </li>
-                                    <li>
-                                        <a href="listademodais">Listar Modais</a>
-                                    </li>
-                                </ul>
-                                <!-- /.nav-second-level -->
+                            <li>
+                                <a href="cotacaoinstantanea"><i class="fa fa-dashboard fa-fw"></i> Cotação Instantanea</a>
                             </li>
-                                                        <li>
-                                <a href="#"><i class="fa fa-money fa-fw"></i> Precos<span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="cadastrarpreco">Cadastrar Preco</a>
-                                    </li>
-                                    <li>
-                                        <a href="listadeprecos">Listar Precos</a>
-                                    </li>
-                                </ul>
-                                <!-- /.nav-second-level -->
-                            </li>
-                          
                         </ul>
                     </div>
                     <!-- /.sidebar-collapse -->
