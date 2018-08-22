@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<title>GCM - Cadastro de Entrega</title>
+	<title>GCM - Rota</title>
 	<%@ include file="head.jsp"%>
 	<%@ include file="basiclinks.jsp"%>
 </head>
@@ -16,61 +16,60 @@
 					<div class="col-lg-12">
 						<div class="row">
 							<div class="col-lg-12">
-								<h1 class="page-header">Cadastro de Entrega</h1>
+								<h1 class="page-header">Mostrar Rota</h1>
 							</div>
 						</div>
 						<div class='panel panel-default'>
 							<div class='panel-heading'>Dados da entrega</div>
 							<div class='panel-body'>
 								<div class='row'>
+									<div class='col-lg-12 loader-div'>
+										<iframe
+												width="100%"
+												height="450"
+												frameborder="0" style="border:0"
+												src="https://www.google.com/maps/embed/v1/directions?
+													key=AIzaSyAT3XGcR9bqqqnxps45-AI5hf3su1mjYjA
+													 &origin=Rua%20Carlos%20Caldeira,516
+													&destination=Rua%20Viriato%20COrreia%20da%20Costa,299"
+												allowfullscreen>
+										</iframe>
+									</div>
+								</div>
+								<div class='row'>
 									<div class='col-lg-12'>
-									<form id="cliente" action="/salvarcliente" method="POST">
 										<div class='row'>
-											<div class='col-lg-8'>
+											<div class='col-lg-12'>
 												<div class='form-group'>
 													<label>Local de Saída</label> 
-													<input class='form-control' name='cliente' required type="textinput">
-												</div>
-											</div>
-											<div class='col-lg-4'>
-												<div class='form-group'>
-													<label>Data de Saída </label> 
-													<input required name="documento" type="textinput" required class="form-control">
+													<input class='form-control' name='cliente' required type="textinput" value="Rua Carlos Caldeira, 516">
 												</div>
 											</div>
 										</div>
 										<div class='row'>
-											<div class='col-lg-8'>
+											<div class='col-lg-12'>
 												<div class='form-group'>
 													<label>Local de Entrega</label> 
-													<input class="form-control" name="email" type="textinput" required>
-												</div>
-											</div>
-											<div class='col-lg-4'>
-												<div class='form-group'>
-													<label>Modal</label> 
-													<input required name="telefone" type="textinput" required class="form-control">
+													<input class="form-control" name="email" type="textinput" required value="Rua Viriato Correia da Costa, 299">
 												</div>
 											</div>
 										</div>
 										<div class='row'>
 											<div class='col-lg-12'>
 												<div class='form-group'>
-													<label>Device Id</label> 
-													<input class="form-control" name="email" type="textinput" required>
+													<label>Modal</label> 
+													<input class="form-control" name="email" type="textinput" required value="Rodoviário">
 												</div>
 											</div>
 										</div>
-										<div class='row text-center'>
+										<div class='row'>
 											<div class='col-lg-12'>
-												<a href="listadeentregascliente">
-													<button type="button" name="action" formnovalidate class='btn btn-success btn-circle btn-lg' title='Salvar'>
-														<i class='fa fa-save'></i>
-													</button>
-												</a>
+												<div class='form-group'>
+													<label>Valor do frete</label> 
+													<input class="form-control" name="email" type="textinput" required value="R$ 56,99">
+												</div>
 											</div>
 										</div>
-									</form>
 									</div>
 								</div>
 							</div>

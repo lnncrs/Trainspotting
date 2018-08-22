@@ -13,6 +13,12 @@ public class ControllerLogin {
 		return new ModelAndView("login");
 	}
 	
+	@RequestMapping(value="/mostrarrota")
+	public ModelAndView mostrarMostrarRota() {
+
+		return new ModelAndView("mostrarrota");
+	}
+	
 	@RequestMapping(value="/index")
 	public ModelAndView mostrarIndex() {
 
